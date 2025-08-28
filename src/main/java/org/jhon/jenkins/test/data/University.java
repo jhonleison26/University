@@ -1,6 +1,6 @@
 package org.jhon.jenkins.test.data;
 
-import org.jhon.jenkins.test.model.Class;
+import org.jhon.jenkins.test.model.Course;
 import org.jhon.jenkins.test.model.Student;
 import org.jhon.jenkins.test.model.Teacher;
 
@@ -9,13 +9,13 @@ import java.util.List;
 public class University {
     private String name;
     private List<Teacher> teachers;
-    private List<org.jhon.jenkins.test.model.Class> classes;
+    private List<Course> courses;
     private List<Student> students;
 
-    public University(String name, List<Teacher> teachers, List<org.jhon.jenkins.test.model.Class> classes, List<Student> students) {
+    public University(String name, List<Teacher> teachers, List<Course> courses, List<Student> students) {
         this.name = name;
         this.teachers = teachers;
-        this.classes = classes;
+        this.courses = courses;
         this.students = students;
     }
 
@@ -36,12 +36,12 @@ public class University {
         this.name = name;
     }
 
-    public List<org.jhon.jenkins.test.model.Class> getClasses() {
-        return classes;
+    public List<Course> getClasses() {
+        return courses;
     }
 
-    public void setClasses(List<org.jhon.jenkins.test.model.Class> classes) {
-        this.classes = classes;
+    public void setClasses(List<Course> courses) {
+        this.courses = courses;
     }
 
     public List<Student> getStudents() {
@@ -60,12 +60,12 @@ public class University {
         this.teachers.add(teacher);
     }
 
-    public void addClass(Class newClass) {
-        this.classes.add(newClass);
+    public void addCourse(Course newCourse) {
+        this.courses.add(newCourse);
     }
 
     public String toString() {
-        return "University{name='" + name + "', teachers=" + teachers + ", classes=" + classes + ", students=" + students + "}";
+        return "University{name='" + name + "', teachers=" + teachers + ", classes=" + courses + ", students=" + students + "}";
     }
 
 }

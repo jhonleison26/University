@@ -2,13 +2,13 @@ package org.jhon.jenkins.test.model;
 
 import java.util.List;
 
-public class Class {
+public class Course {
     private String name;
     private Teacher teacher;
     private String classRoom;
     private List<Student> students;
 
-    public Class(String className, Teacher teacher, String classRoom, List<Student> students) {
+    public Course(String className, Teacher teacher, String classRoom, List<Student> students) {
         this.name = className;
         this.teacher = teacher;
         this.classRoom = classRoom;
