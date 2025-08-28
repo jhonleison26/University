@@ -36,5 +36,9 @@ public class Student {
         this.id = id;
     }
 
+    public String toString() {
+        return "Student{name='" + name + "', id='" + id + "', age=" + age + "}";
+    }
+
 
 }

@@ -8,9 +8,12 @@ public class FullTimeTeacher extends Teacher{
         this.experienceYears = experienceYears;
 
     }
-
     @Override
     public double calculateSalary() {
         return getBaseSalary() * (1.1 * experienceYears);
+    }
+
+    public String toString() {
+        return "FullTimeTeacher{name='" + getName() + "', baseSalary=" + getBaseSalary() + ", experienceYears=" + experienceYears + "}";
     }
 }

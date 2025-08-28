@@ -26,4 +26,8 @@ public abstract class Teacher {
     }
 
     abstract double calculateSalary ();
+
+    public String toString() {
+        return "Teacher{name='" + name + "', baseSalary=" + baseSalary + "}";
+    }
 }
