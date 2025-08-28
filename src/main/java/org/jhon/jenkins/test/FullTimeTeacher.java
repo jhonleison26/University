@@ -13,7 +13,8 @@ public class FullTimeTeacher extends Teacher{
         return getBaseSalary() * (1.1 * experienceYears);
     }
 
+    @Override
     public String toString() {
-        return "FullTimeTeacher{name='" + getName() + "', baseSalary=" + getBaseSalary() + ", experienceYears=" + experienceYears + "}";
+        return "FullTimeTeacher{name='" + getName() + "', baseSalary=" + getBaseSalary() + ", salary=" + calculateSalary() + ", experienceYears=" + experienceYears + "}";
     }
 }

@@ -13,7 +13,8 @@ public class PartTimeTeacher extends Teacher{
         return getBaseSalary() * hoursPerWeek;
     }
 
+    @Override
     public String toString() {
-        return "PartTimeTeacher{name='" + getName() + "', baseSalary=" + getBaseSalary() + ", hoursPerWeek=" + hoursPerWeek + "}";
+        return "PartTimeTeacher{name='" + getName() + "', baseSalary=" + getBaseSalary() + ", Salary=" + calculateSalary() + ", hoursPerWeek=" + hoursPerWeek + "}";
     }
 }
