@@ -1,6 +1,6 @@
-package org.jhon.jenkins.test;
+package org.jhon.jenkins.test.model;
 
-public class FullTimeTeacher extends Teacher{
+public class FullTimeTeacher extends Teacher {
     private int experienceYears;
 
     public FullTimeTeacher (String name, double baseSalary, int experienceYears) {

@@ -1,4 +1,4 @@
-package org.jhon.jenkins.test;
+package org.jhon.jenkins.test.model;
 
 public class Student {
     private String name;

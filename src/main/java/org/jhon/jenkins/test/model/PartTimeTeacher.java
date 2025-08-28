@@ -1,6 +1,6 @@
-package org.jhon.jenkins.test;
+package org.jhon.jenkins.test.model;
 
-public class PartTimeTeacher extends Teacher{
+public class PartTimeTeacher extends Teacher {
     private final int hoursPerWeek;
 
     public PartTimeTeacher(String name, double baseSalary, int hoursPerWeek) {

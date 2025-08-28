@@ -1,4 +1,4 @@
-package org.jhon.jenkins.test;
+package org.jhon.jenkins.test.model;
 
 import java.util.List;
 
@@ -46,6 +46,10 @@ public class Class {
 
     public void setStudents(List<Student> students) {
         this.students = students;
+    }
+
+    public void addStudent(Student student) {
+        this.students.add(student);
     }
 
     public String toString() {
